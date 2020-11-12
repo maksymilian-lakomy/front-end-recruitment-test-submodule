@@ -85,7 +85,7 @@
           <section
             class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp"
           >
-            <button type="button" id="bacon-button">
+            <button type="button" onclick="addBacon()">
               Yeah, I want more bacon!
             </button>
           </section>
@@ -209,11 +209,6 @@
 </html>
 
 <script>
-  function initBaconButton() {
-    const baconButton = document.querySelector("#bacon-button");
-    baconButton.addEventListener("click", this.addBacon);
-  }
-
   function addBacon() {
     const baconSection = document.querySelector("#bacon-section");
     const baconImage = document.querySelector("#bacon-image");
@@ -223,6 +218,4 @@
 
     baconSection.appendChild(baconClone);
   }
-
-  initBaconButton();
 </script>
