@@ -219,6 +219,7 @@
     const baconImage = document.querySelector("#bacon-image");
 
     const baconClone = baconImage.cloneNode();
+    baconClone.removeAttribute('id');
 
     baconSection.appendChild(baconClone);
   }
